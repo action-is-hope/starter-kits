@@ -1,10 +1,6 @@
 # Shelley + Stylable Starter Kits
 
-Yoooo!! Welcome, hopefully this is usual for someone other than us but if not, it's ok, 🥺 no no really, 😢 it's fine 😭
-
-Sorry, in a silly mood.
-
-Right then, this our our little dumping ground for [Stylable](https://stylable.io/) + Shelley starter kits. Stylable is fairly a understated CSS preprocessor , it's developed by web powerhouse Wix who have been working on some [Stylable examples](https://github.com/wixplosives/stylable-examples) which is worth checking out.
+Welcome! This our our little dumping ground for [Stylable](https://stylable.io/) + Shelley starter kits. Stylable is fairly a understated CSS preprocessor , it's developed by web powerhouse Wix who have been working on some [Stylable examples](https://github.com/wixplosives/stylable-examples) which is worth checking out.
 
 Wix might seem like an unlikely candidate for standards based CSS but we can assure you that the team loooking after this project is all about the standards. Shelley (our UI lib) 🥰 stylable and the team for without them, Shelley would not exist 🐣.
 
