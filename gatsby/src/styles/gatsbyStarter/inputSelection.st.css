@@ -12,6 +12,7 @@
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
   -st-named:
     --spacing-unit,
+    --color-form-base-border;
 }
 
 /* = Shelley project scope. */
@@ -21,7 +22,6 @@
   -st-named:
     /* = CSS3 Vars. */
     --color-background-3,
-    --color-form-mark,
     --color-ui,
     --color-focus;
 }

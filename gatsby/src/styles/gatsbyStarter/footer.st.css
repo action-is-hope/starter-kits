@@ -1,11 +1,19 @@
 :import {
-  -st-from: "./project.st.css";
+  -st-from: "@actionishope/shelley/styles/default/project.st.css";
+  -st-named:
+    --spacing-unit;
+}
+
+/* = Shelley project scope and vars. */
+:import {
+  -st-from: "../../styles/gatsbyStarter/project.st.css";
   -st-default: GatsbyStarter;
   -st-named:
-    --spacing-unit,
-    --color-accent-1-default,
-    --color-ui-default;
+    /* = CSS3 Vars. */
+    --color-background-1,
+    --color-ui;
 }
+
 
 /* = Root Component */
 :import {
