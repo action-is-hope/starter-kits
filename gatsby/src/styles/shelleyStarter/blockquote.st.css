@@ -3,33 +3,26 @@
  * 
  * ========================================================================= */
 
-
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit,
+  -st-named: --spacing-unit;
 }
 
 /* = Shelley project scope and vars. */
 :import {
   -st-from: "./project.st.css";
-  -st-default: GatsbyStarter;
+  -st-default: ShelleyStarter;
   -st-named:
-    /* = CSS3 Switcher vars. */
-    --color-accent-1,
+    /* = CSS3 Switcher vars. */ --color-accent-1,
     --color-background-2;
 }
-
 
 /* = Root Component */
 :import {
   -st-from: "@actionishope/shelley/components/Blockquote/blockquote.st.css";
   -st-default: Blockquote;
-  -st-named:
-    cite,
-    content,
-    footer;
+  -st-named: cite, content, footer;
 }
 
 /* = Child Components */
@@ -38,25 +31,20 @@
   -st-default: Text;
 }
 
-@st-scope GatsbyStarter {
-
-  /* Useful if you want some quote chars via the content property 
+@st-scope ShelleyStarter {
+  /* = Useful if you want some quote chars via the content property 
    https://css-tricks.com/css-content/ */
 
   /**
-   * =Variant 1 - Informal - 'chat'
+   * = Variant 1 - Informal - 'chat'
    *
    * A useful style to get across a chat/conversation of some kind.
    * @todo: should be able to alternate the styles for a chat? 
    * Maybe we need a chat wrapper? Maybe in that format they should not be blockquotes...
    */
 
-  /* @todo: Same time as upgrade switch to 'state' helpers as I much prefer this syntax: Blockquote:variant(1)::content { */
   Blockquote:variant(1)::content {
-    /* background-color: var(--color-background-2);
-    background-color: rgba(255, 255, 255, 0.04); */
     background-color: rgba(64, 121, 230, 0.87);
-    /* background: var(--accent); */
     padding: 16px 36px;
     margin: 0 0 40px;
     max-width: 600px;
@@ -66,8 +54,6 @@
 
   Blockquote:variant(1)::content::before {
     border-right: 20px solid transparent;
-    /* border-top: 20px solid var(--color-background-2);
-    border-top: 20px solid rgba(255, 255, 255, 0.04); */
     border-top-color: rgba(64, 121, 230, 0.87);
     bottom: -20px;
     content: "";
@@ -104,6 +90,6 @@
     border-width: 1px 0 1px 1px;
     width: 18px;
     top: 0;
-    bottom: 0
+    bottom: 0;
   }
 }

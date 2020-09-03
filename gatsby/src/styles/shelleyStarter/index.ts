@@ -21,7 +21,7 @@ import Text from "./text.st.css";
 import Footer from "./footer.st.css";
 
 // = Project
-import GatsbyStarter from "./project.st.css";
+import ShelleyStarter from "./project.st.css";
 
 // = Helper to extract the class names.
 const getStylableClassNames = (
@@ -76,7 +76,7 @@ export const footer = (...values: []) =>
   getStylableClassNames(values, Footer, "footer");
 
 // = Main classname export
-export const Project = GatsbyStarter.classes.root;
+export const Project = ShelleyStarter.classes.root;
 
 // = Theme exports
 export const Light = light.root;

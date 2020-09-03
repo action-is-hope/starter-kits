@@ -6,9 +6,8 @@
 /* = Shelley project scope and vars. */
 :import {
   -st-from: "./project.st.css";
-  -st-default: GatsbyStarter;
+  -st-default: ShelleyStarter;
   -st-named:
-    /* = CSS3 Vars. */
     --color-text-2;
 }
 
@@ -16,16 +15,11 @@
 :import {
   -st-from: "@actionishope/shelley/components/Label/label.st.css";
   -st-default: Label;
-  -st-named:
-    textContainer,
-    labelText;
+  -st-named: textContainer, labelText;
 }
 
-
-@st-scope GatsbyStarter {
-
+@st-scope ShelleyStarter {
   Label::textContainer {
     color: var(--color-text-2);
   }
-
 }

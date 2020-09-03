@@ -6,26 +6,20 @@
  *
  * ========================================================================= */
 
-
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit,
-    --color-form-base-border;
+  -st-named: --spacing-unit, --color-form-base-border;
 }
 
 /* = Shelley project scope. */
 :import {
   -st-from: "./project.st.css";
-  -st-default: GatsbyStarter;
+  -st-default: ShelleyStarter;
   -st-named:
-    /* = CSS3 Vars. */
-    --color-background-3,
-    --color-ui,
+    --color-background-3, --color-ui,
     --color-focus;
 }
-
 
 /* = Root Component. */
 :import {
@@ -56,21 +50,17 @@
 
 /* = Shelley Mixins */
 :import {
-  -st-from: '@actionishope/shelley/styles/mixins/visuallyHidden.st.css';
-  -st-named: visuallyHidden
+  -st-from: "@actionishope/shelley/styles/mixins/visuallyHidden.st.css";
+  -st-named: visuallyHidden;
 }
 
 /* = Mixins */
 :import {
-  -st-from: '@actionishope/shelley/styles/default/mixins/tooltip.st.css';
-  -st-named:
-    tooltip,
-    tooltipVisible
+  -st-from: "@actionishope/shelley/styles/default/mixins/tooltip.st.css";
+  -st-named: tooltip, tooltipVisible;
 }
 
-
-@st-scope GatsbyStarter {
-
+@st-scope ShelleyStarter {
   /* ==== VARIANTS ====*/
 
   /* = Variant 2 - Form row style. */
@@ -79,7 +69,6 @@
   }
 
   /* InputSelection:variant(2) SelectionControl {} */
-
 
   /* = Dark / Light theme switcher styles */
   .darkLightToggle {
@@ -141,7 +130,7 @@
   /* = Fabulous! https://css-tricks.com/touch-devices-not-judged-size/ */
   @media (pointer: coarse) {
     .darkLightToggle HintText {
-      -st-mixin: visuallyHidden
+      -st-mixin: visuallyHidden;
     }
   }
 

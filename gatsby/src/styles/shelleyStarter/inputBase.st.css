@@ -9,22 +9,18 @@
  * 
  * ========================================================================= */
 
-
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit;
+  -st-named: --spacing-unit;
 }
 
 /* = Shelley project scope and vars. */
 :import {
   -st-from: "./project.st.css";
-  -st-default: GatsbyStarter;
-  -st-named:
-    --color-background-3;
+  -st-default: ShelleyStarter;
+  -st-named: --color-background-3;
 }
-
 
 /* = Root Component. */
 :import {
@@ -32,18 +28,16 @@
   -st-default: InputBase;
 }
 
-
-@st-scope GatsbyStarter {
-
+@st-scope ShelleyStarter {
   /*==== VARIANTS ====*/
 
   /* = Variant 1 - "Body" */
-  InputBase:variant(1) {}
+  InputBase:variant(1) {
+  }
 
   /* = Variant 2 - "Data" */
 
   InputBase:variant(2) {
     background-color: var(--color-background-3);
   }
-
 }

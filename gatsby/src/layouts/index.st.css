@@ -1,20 +1,15 @@
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit;
+  -st-named: --spacing-unit;
 }
 
 /* = Shelley project scope and vars. */
 :import {
-  -st-from: "../styles/gatsbyStarter/project.st.css";
-  -st-default: GatsbyStarter;
-  -st-named:
-    /* = CSS3 Vars. */
-    --color-background-1,
-    --color-ui;
+  -st-from: "../styles/shelleyStarter/project.st.css";
+  -st-default: ShelleyStarter;
+  -st-named: --color-background-1, --color-ui;
 }
-
 
 .navbar {
   background: var(--color-background-1);
@@ -30,7 +25,6 @@
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
-
 
 .controls {
   display: inline-flex;

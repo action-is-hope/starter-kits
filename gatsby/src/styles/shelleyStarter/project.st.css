@@ -1,11 +1,28 @@
 /**
- * GatsbyStarter Project - project.st.css
+ * ShelleyStarter Project - project.st.css
  * 
  * Your main project which is essentially a theme but it itself can have themes
- * so project seems more appropriate. 
+ * so project seems more appropriate.
+ *
+ * Take a look at our default project file to get an idea of what you can override.
+ * 
+ *
+ * This project is to be used in conjunction with Shelley's 'default' 
+ * styles|theme|project whatever you want to call it.
+ *
+ * Shelley's default provides the base and this sits on top of that and here
+ * we can import and override the CSS variables declared as part of the default. 
+ * We also set all of our project specifics such as colours and fonts. 
+ *
+ * Limitatons: We use CSS vars so IE11 is mostly out the window. We are also 
+ * unable to use override the values of the breakpoints and that's about it.
+ *
+ * You are able to clone our default and just use that as a fork and go from 
+ * there, that way you can override everything at the base and use that as your
+ * go to for your projects. Up to you.
  */
 
-@namespace "GatsbyStarter";
+@namespace "ShelleyStarter";
 
 /* = Default project vars to be overridden. */
 :import {
@@ -17,18 +34,15 @@
     --color-form-selection-border,
     --color-form-selection-notch,
     --color-toggle-notch,
-
     --select-icon,
     --grid-gap,
     --grid-v1-cols-xs,
     --grid-v1-cols-sm,
     --grid-v1-cols-md,
-
     --text-vol-10-max,
     --text-vol-10-scale,
     --text-vol-10-line-height;
 }
-
 
 /*=== BUILD-TIME 'VARIABLE' DEFINITIONS ===*/
 
@@ -37,20 +51,16 @@
 
   /** Fonts */
   /* font-plain: Tahoma, Verdana, Segoe, sans-serif; */
-  font-plain:
-    Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
   /* Georgia, serif; */
   font-special: Helvetica Neue, Helvetica, Arial, sans-serif;
   /* Georgia, serif; */
-  font-mono:
-    Menlo, Courier, Courier New, Andale Mono, monospace;
+  font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
 }
-
 
 /*=== Root Level CSS Variables - 'run time' ===*/
 
 :root {
-
   /*=== COLOURS - The Queens English darling... ===*/
 
   /* = Core light - always light or dark regardless of theme. */
@@ -104,14 +114,17 @@
   /* --color-toggle-notch:  */
 
   /* = Gradiants */
-  --grad-1: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(35, 38, 49, 0.14) 100px, rgba(35, 38, 49, 0.8) 500px, rgba(35, 38, 49, 1) 100%);
+  --grad-1: linear-gradient(to bottom,
+      rgba(30, 87, 153, 0) 0%,
+      rgba(35, 38, 49, 0.14) 100px,
+      rgba(35, 38, 49, 0.8) 500px,
+      rgba(35, 38, 49, 1) 100%);
 
   /* = Misc */
   /* --select-icon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' xml:space='preserve'><path d='M13 4v2l-5 5-5-5v-2l5 5z'></path></svg>"); */
   /* --select-icon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white' xml:space='preserve'><path d='M3 2v2l5 5 5-5v-2l-5 5z'></path><path d='M3 7v2l5 5 5-5v-2l-5 5z'></path></svg>"); */
   --status-background: #692e2e;
   --support-background: #2e5b69;
-
 
   /* --grid-v1-cols-md: 1fr; */
   /* --text-vol-10-scale: 18px; */
@@ -121,8 +134,7 @@
 
 /** 
  * This ideally will just be a spinkling of higher level styles that use 
- * variables. For the reset globals we set them in ./allGlobals.st.css 
- * which is pulled in within index.ts */
+ * variables. */
 .root {
   font-family: value(font-plain);
   color: var(--color-ui);

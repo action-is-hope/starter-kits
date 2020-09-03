@@ -8,18 +8,16 @@
  * 
  * ========================================================================= */
 
-
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit;
+  -st-named: --spacing-unit;
 }
 
 /* = Shelley project scope and vars. */
 :import {
   -st-from: "./project.st.css";
-  -st-default: GatsbyStarter;
+  -st-default: ShelleyStarter;
 }
 
 /* = Root Component */
@@ -28,6 +26,12 @@
   -st-default: Grid;
 }
 
-@st-scope GatsbyStarter {
+@st-scope ShelleyStarter {
   /* = Your grid styles here... */
+
+  /**
+   * Grid:variant(1 - 4) have been assigned as part of our default.
+   * You can overide those (in your project file) just import them 
+   * from our default project file and reassign.
+   */
 }

@@ -5,9 +5,9 @@ import Helmet from "react-helmet";
 import { classes as style } from "./index.st.css";
 
 import { Project as Default } from "@actionishope/shelley/styles/default";
-import { Project as Shelley, Light, Dark } from "../styles/gatsbyStarter";
+import { Project as Shelley, Light, Dark } from "../styles/shelleyStarter";
 
-import { classes as inputSelection } from "../styles/gatsbyStarter/inputSelection.st.css";
+import { classes as inputSelection } from "../styles/shelleyStarter/inputSelection.st.css";
 
 import { InputSelection, Icon } from "@actionishope/shelley";
 

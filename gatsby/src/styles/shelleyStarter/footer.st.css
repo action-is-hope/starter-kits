@@ -1,19 +1,15 @@
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named:
-    --spacing-unit;
+  -st-named: --spacing-unit;
 }
 
 /* = Shelley project scope and vars. */
 :import {
-  -st-from: "../../styles/gatsbyStarter/project.st.css";
-  -st-default: GatsbyStarter;
+  -st-from: "../../styles/shelleyStarter/project.st.css";
+  -st-default: ShelleyStarter;
   -st-named:
-    /* = CSS3 Vars. */
-    --color-background-1,
-    --color-ui;
+    --color-background-1, --color-ui;
 }
-
 
 /* = Root Component */
 :import {
@@ -22,14 +18,12 @@
   -st-named: navItem;
 }
 
-
 :import {
   -st-from: "@actionishope/shelley/components/Text/text.st.css";
   -st-default: Text;
 }
 
-
-@st-scope GatsbyStarter {
+@st-scope ShelleyStarter {
   Footer {
     background: #111;
     min-height: 70px;
@@ -63,5 +57,4 @@
   Footer Text .navItem {
     color: #fff;
   }
-
 }
