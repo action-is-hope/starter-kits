@@ -15,7 +15,9 @@
 :import {
   -st-from: "@actionishope/shelley/components/Label/label.st.css";
   -st-default: Label;
-  -st-named: textContainer, labelText;
+  -st-named:
+    textContainer,
+    labelText;
 }
 
 @st-scope ShelleyStarter {

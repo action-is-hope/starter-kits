@@ -9,7 +9,9 @@
 /* = Default project vars. */
 :import {
   -st-from: "@actionishope/shelley/styles/default/project.st.css";
-  -st-named: --spacing-unit, --color-form-base-border;
+  -st-named:
+    --spacing-unit,
+    --color-form-base-border;
 }
 
 /* = Shelley project scope. */
