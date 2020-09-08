@@ -5,7 +5,7 @@ import { Text, H1, H2, H3, P, Grid } from "@actionishope/shelley";
 
 import { classes as text } from "@actionishope/shelley/styles/default/text.st.css";
 import { classes as grid } from "@actionishope/shelley/styles/default/grid.st.css";
-import { classes as spacing } from "@actionishope/shelley/styles/shelley/mixins/spacing.st.css";
+import { classes as spacing } from "@actionishope/shelley/styles/default/spacing.st.css";
 
 import Banner from "../components/Banner/Banner";
 
@@ -89,7 +89,7 @@ const IndexPage = ({ data }: IndexPageProps) => {
         wrappers.
         
         Instead we nest a grid, which we'll make a figure seeing as it houses an 
-        image. By using grid.edge we essesntially are able to go full width and 
+        image. By using grid.edge we essentially are able to go full width and 
         visually close the grid. 
 
         The internally we have the same grid to work with so we can position the 

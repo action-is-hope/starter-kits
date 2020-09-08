@@ -54,10 +54,6 @@
     letter-spacing: 0.31em;
   }
 
-  Grid Text.center {
-    text-align: center;
-  }
-
   /* = Styles - typical child children. @todo tidy... */
 
   Text a {
