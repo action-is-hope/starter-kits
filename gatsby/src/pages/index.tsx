@@ -1,7 +1,7 @@
 import React from "react";
 import DefaultLayout from "../layouts";
 import classnames from "classnames";
-import { Text, H1, H2, H3, P, Grid } from "@actionishope/shelley";
+import { Text, H1, H2, P, Grid } from "@actionishope/shelley";
 
 import { classes as text } from "@actionishope/shelley/styles/default/text.st.css";
 import { classes as grid } from "@actionishope/shelley/styles/default/grid.st.css";
@@ -45,38 +45,45 @@ const IndexPage = ({ data }: IndexPageProps) => {
         <P>
           Having said that... We wanted a default theme that we could use when
           spinning up new sites and whilst we are hesitate to say that we
-          'support' it, we will be using it and you can too.
-        </P>
-
-        <P>Or just copy it from styles/default and essentially 'fork' it.</P>
-
-        <P>
-          Our default comes with only 2 colours set (overridable) so you are
-          able to define whatever colours you want and assign them how and where
-          you want.
+          'support' it. We will be using it and you can too or just copy it from{" "}
+          <a href="https://github.com/action-is-hope/shelley/tree/master/src/styles/default">
+            @actionishope/shelley/styles/default
+          </a>
+          and essentially 'fork' it. Start in the <code>project.st.css</code> to
+          see how the styles are broken down.
         </P>
 
         <P>
-          You may want to play around with this theme we have set up here first,
-          see what's what, get used to Stylable and take it from there.
+          You might want to play around with this subtheme we have set up here
+          first, see what's what, get used to Stylable and take it from there.
         </P>
 
-        <H2 vol={5} uppercase>
+        <P>
+          Also as well as <a href="https://stylable.io/">stylable.io</a> also
+          checkout the{" "}
+          <a href="https://github.com/wixplosives/stylable-examples">
+            stylable examples
+          </a>{" "}
+          from the team over at Wix.
+        </P>
+
+        <H2 vol={4} uppercase>
           Default theme
         </H2>
 
         <P>
           You will notice that our components take number indexes as props. Why?
-          Naming conventions suck and usually we don't give a rats ass what the
-          design system calls things plus your design system can include
-          mappings to Shelley indexes anyways.
+          Naming conventions suck and usually we don't care what a design system
+          calls things. Your design system can include mappings to Shelley
+          indexes anyways.
         </P>
 
         <P>
           A number index also removes naming semantics so we don't end up
           paragraph content with a variant set to "subtitle1" because the size
-          is better for the usecase. Nothing pisses of Shelley more. Numbers are
-          also easy to remember and are also easy changed in the DOM exployer.
+          is better for the usecase. Nothing annoys Shelley more. Numbers are
+          also easy to remember and are also easy changed in the DOM via the
+          inspector.
         </P>
 
         <P>
